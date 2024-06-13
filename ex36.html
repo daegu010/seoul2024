@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var callback=function(){
+            console.log('반복실행');
+            w=window.setTimeout(callback,3000);
+        };
+        // var w=window.setInterval(callback,3000);
+        var w=window.setTimeout(callback,3000);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

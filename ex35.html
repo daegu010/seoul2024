@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var w;
+        function func01(){
+            w=window.open('http://naver.com');
+        }
+        function func02(){
+            w.close();
+        }
+        function func03(){
+            alert('알림창');
+        }
+        function func04(){
+            console.log(window.confirm('승인하시겠습니까?'));
+        }
+        function func05(){
+            console.log(window.prompt('입력해주세요'));
+        }
+    </script>
+</head>
+<body>
+    <button onclick="func05();">open</button>
+    <button onclick="func02();">close</button>
+</body>
+</html>

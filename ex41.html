@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #target img{
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="target"></div>
+    <script type="text/javascript">
+        var arr=[
+            '<img src="imgs/img01.jfif">',
+            '<img src="imgs/img02.jfif">',
+            '<img src="imgs/img03.jfif">',
+            '<img src="imgs/img04.jfif">',
+            '<img src="imgs/img05.jfif">',
+            '<img src="imgs/img06.jfif">',
+            '<img src="imgs/img07.jfif">',
+            '<img src="imgs/img08.jfif">'
+        ];
+        var target=document.querySelector("#target");
+        target.innerHTML='<img src="imgs/img01.jfif">';
+        var num=0;
+        var callback=function (){
+            num++;
+            if(num==arr.length)num=0;
+            target.innerHTML=arr[num];
+            setTimeout(callback,1000);
+        };
+
+        setTimeout(callback,3000);
+    </script>
+</body>
+</html>

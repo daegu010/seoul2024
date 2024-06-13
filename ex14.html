@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style rel="stylesheet" type="text/css">
+        form input[type$='l']{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>회원가입</h1>
+        <form>
+            <div><label for="id">id</label>
+                <input type="text" name="id"></div>
+            <div><label for="email">email</label>
+                <input type="email" name="email"></div>
+            <div><label for="home">homepage</label>
+                <input type="url" name="home"></div>
+            <div><label for="age1">age1</label>
+                <input type="tel" name="age1"></div>
+            <div><label for="age2">age2</label>
+                <input type="range" min="1" max="100" name="age2" value="100"></div>
+            <div><label for="pw">pw</label>
+                <input type="password" name="pw"></div>
+            <div><label for="file">file</label>
+                <input type="file" name="file"></div>
+            <div><label for="color">color</label>
+                <input type="color" name="color"></div>
+            <div><label for="date">date</label>
+                <input type="date" name="date"></div>
+            <select name="location">
+                <option>서울</option>
+                <option>대전</option>
+                <option>대구</option>
+                <option>부산</option>
+            </select>
+            <input type="submit" value="버튼">
+            <button type="button">btn</button>
+            <button type="submit">가입</button>
+            <button type="reset">취소</button>
+            </form>
+            </div>
+    <a href="ex14.html?id=1&name=2&age=3&pw=4&location=%EC%84%9C%EC%9A%B8">전달</a>
+</body>
+</html>

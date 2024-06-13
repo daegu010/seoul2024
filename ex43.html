@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #target,#target+div{
+            height: 100px;
+            clear: both;
+        }
+        #target>ul{
+            width: 800px;
+            padding: 0px;
+            list-style: none;
+            animation-duration: 6s;
+            animation-name: ani1;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-play-state: paused;
+        }
+        #target>ul>li{
+            float: left;
+        }
+        #target>ul>li>img{
+            width: 100px;
+        }
+        @keyframes ani1 {
+            from{
+                margin-left: 0px;
+            }
+            to{
+                margin-left: -500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="target">
+        <ul>
+            <li><img src="imgs/img01.jfif" alt=""></li>
+            <li><img src="imgs/img02.jfif" alt=""></li>
+            <li><img src="imgs/img03.jfif" alt=""></li>
+            <li><img src="imgs/img04.jfif" alt=""></li>
+            <li><img src="imgs/img05.jfif" alt=""></li>
+            <li><img src="imgs/img06.jfif" alt=""></li>
+            <li><img src="imgs/img07.jfif" alt=""></li>
+            <li><img src="imgs/img08.jfif" alt=""></li>
+        </ul>
+    </div>
+    <div>
+    <button onclick="play();">play</button>
+    <button onclick="stop();">stop</button>
+    </div>
+    <script type="text/javascript">
+        function play(){
+            document.querySelector('ul').style.animationPlayState='running';
+        }
+        function stop(){
+            document.querySelector('ul').style.animationPlayState='paused';
+        }
+    </script>
+</body>
+</html>

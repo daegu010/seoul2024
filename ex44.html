@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        window.onload=function (){
+            //console.log("이벤트 발생", document.querySelector('h1'));
+            var h1=document.querySelector('h1');
+            var btn=document.querySelector('button');
+            var input=document.querySelector('input');
+            var select=document.querySelector('select');
+
+            select.onchange=function(e){
+                console.log('change',e.target.value,e);
+            };
+            input.onkeydown=function(e){
+                console.log('keydown',e);
+            };
+            input.onkeyup=function(e){
+                console.log('keyup',e);
+            };
+            input.onkeypress=function(e){
+                console.log('keypress',e.key);
+                console.log(input.value);
+                console.log(e.target.value);
+            };
+
+            // // h1.onmouseover=function(){
+            // h1.onmouseenter=function(){
+            //     console.log('over');
+            // };
+            // // h1.onmouseout=function(){
+            // h1.onmouseleave=function(){
+            //     console.log('out');
+            // };
+            // h1.onmousemove=function(e){
+            //     console.log('move',e);
+            // };
+
+            // h1.onclick=function(){
+            //     console.log('클릭');
+            // };
+            // btn.onmousedown=function(){
+            //     console.log('down');
+            // };
+            // btn.onmouseup=function(){
+            //     console.log('up');
+            // };
+        };
+    </script>
+</head>
+<body>
+    <h1>test</h1>
+    <button>btn</button>
+    <input/>
+    <select>
+        <option>item1</option>
+        <option>item2</option>
+        <option>item3</option>
+        <option>item4</option>
+    </select>
+</body>
+</html>

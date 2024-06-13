@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style rel="stylesheet" type="text/css">
+        /*
+        #content > table > tbody > tr:nth-child(2n)
+        #header+div>ul>li:nth-child(2n-1)>a,table tr:nth-child(2n)>td{
+            background-color: red;
+        }
+        */
+        a[href="#2"]{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"><img src="logoGoogle.png" ></div>
+    <div id="menu">
+        <ul>
+            <li><a href="#1">menu1</a></li>
+            <li><a href="#2">menu2</a></li>
+            <li><a href="#3">menu3</a></li>
+            <li><a href="#4">menu4</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <h1>목록</h1>
+        <p>게시글 목록입니다</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>글번호</th>
+                    <th>제목</th>
+                    <th>글쓴이</th>
+                    <th>조회수</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>4</td>
+                <td>제목4</td>
+                <td>테스터</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>제목3</td>
+                <td>테스터</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>제목2</td>
+                <td>테스터</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>제목1</td>
+                <td>테스터</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+</body>
+</html>
