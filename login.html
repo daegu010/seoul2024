@@ -29,6 +29,12 @@
             line-height: 50px;
         }
     </style>
+    <!-- Before -->
+<script src="https://t1.kakaocdn.net/kakao_js_sdk/v1/kakao.min.js"></script>
+<script>
+    Kakao.init("본인 자바스크립트 키");
+    console.log(Kakao.isInitialized());
+</script>
 </head>
 <body>
     <nav>
@@ -41,6 +47,18 @@
     </nav>
     <div id="content">
         <h1>login page</h1>
+
+        <a id="kakao-login-btn" href="javascript:loginWithKakao()">
+            <img src="https://k.kakaocdn.net/14/dn/btroDszwNrM/I6efHub1SN5KCJqLm1Ovx1/o.jpg" width="222">
+        </a>
     </div>
+    <script>
+        Kakao.Auth.login({
+            scope:"profile_nickname",
+            success:function(data){
+                console.log(data);
+            }
+        });
+    </script>
 </body>
 </html>
